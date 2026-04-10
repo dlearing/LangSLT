@@ -30,3 +30,14 @@ pip install -r requirements.txt
 
 export PYTHONPATH="./:$PYTHONPATH"
 ```
+## Prompt Templates
+
+1. Prompts  for sign language action descriptions.
+You are a sign language expert, please translate the inputs into a sign language action description text with strict format:
+<Gestures: [Action 1 Description]; [Action 2 Description];…> 
+<Nation: [National]>
+<Language: [Language]>
+The inputs are expressed in { National} sign language .Please describe the sign language action corresponding to the inputs  in {Language}.
+
+2.the semantics represented by the action description.
+You are {Nation}  sign language expert. please generate a reasonable  {Language}   spoken  text  based on the action description of  {Nation}   sign language.
